@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.example.aninterface.movieapp.Fragment.FavoriteFragment">
+
+    <com.ogaclejapan.smarttablayout.SmartTabLayout
+        android:id="@+id/tab_view_pager_fav"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:stl_defaultTabBackground="?attr/selectableItemBackground"
+        app:stl_defaultTabTextColor="#fff"
+        app:stl_distributeEvenly="true"
+        app:stl_dividerThickness="0dp"
+        android:background="@color/light_green_800"
+        app:stl_drawDecorationAfterTab="true"
+        app:stl_indicatorColor="@color/light_green_400"
+        app:stl_indicatorCornerRadius="2dp"
+        app:stl_indicatorInterpolation="smart"
+        app:stl_indicatorThickness="4dp"
+        app:stl_overlineThickness="0dp"
+        app:stl_underlineThickness="0dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager_fav"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
